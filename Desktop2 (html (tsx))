@@ -1,0 +1,48 @@
+import { memo } from 'react';
+import type { FC } from 'react';
+
+import resets from '../_resets.module.css';
+import classes from './Desktop2.module.css';
+import { Frame3_Property1Default } from './Frame3_Property1Default/Frame3_Property1Default';
+
+interface Props {
+  className?: string;
+}
+/* @figmaId 6:147 */
+export const Desktop2: FC<Props> = memo(function Desktop2(props = {}) {
+  return (
+    <div className={`${resets.storybrainResets} ${classes.root}`}>
+      <div className={classes.cONTACTUS}>CONTACT US</div>
+      <div className={classes.aBOUTUS}>ABOUT US </div>
+      <div className={classes.myPhotographyIsAnExtensionOfWh}>
+        <div className={classes.textBlock}>
+          My photography is an extension of who I am – vibrant, authentic, and filled with emotion. I specialize, where
+          I strive to capture the true essence of my subjects. Whether it&#39;s a fleeting smile, a tender embrace, or
+          the beauty of nature, I aim to create images that resonate deeply with viewers.
+        </div>
+        <div className={classes.textBlock2}>
+          Beyond the lens, I value the relationships I build with my clients. Every session is an opportunity to
+          connect, collaborate, and create something beautiful together. I pride myself on providing a comfortable and
+          enjoyable experience, ensuring that every moment feels natural and authentic.
+        </div>
+        <div className={classes.textBlock3}>
+          <p></p>
+        </div>
+        <div className={classes.textBlock4}>
+          <p></p>
+        </div>
+      </div>
+      <div className={classes.photographer1}></div>
+      <div className={classes.rectangle1}></div>
+      <div className={classes.cONTACTUS2}>CONTACT US</div>
+      <div className={classes.aBOUTUS2}>ABOUT US </div>
+      <div className={classes.cam2RemovebgPreview1}></div>
+      <Frame3_Property1Default
+        className={classes.frame4}
+        text={{
+          category: <div className={classes.category}>CATEGORY</div>,
+        }}
+      />
+    </div>
+  );
+});
