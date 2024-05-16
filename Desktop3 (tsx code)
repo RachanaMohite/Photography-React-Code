@@ -1,0 +1,39 @@
+import { memo } from 'react';
+import type { FC } from 'react';
+
+import resets from '../_resets.module.css';
+import classes from './Desktop3.module.css';
+import { Frame3_Property1Default } from './Frame3_Property1Default/Frame3_Property1Default';
+
+interface Props {
+  className?: string;
+}
+/* @figmaId 61:4 */
+export const Desktop3: FC<Props> = memo(function Desktop3(props = {}) {
+  return (
+    <div className={`${resets.storybrainResets} ${classes.root}`}>
+      <div className={classes.rectangle7}></div>
+      <div className={classes.cONTACTUS}>CONTACT US</div>
+      <div className={classes.aBOUTUS}>ABOUT US </div>
+      <div className={classes.cam2RemovebgPreview1}></div>
+      <div className={classes.rectangle6}></div>
+      <div className={classes.machuPicchuWhichMeansOldMounta}>
+        Machu Picchu which means ‘Old Mountain’ in the local Quechua language is a famous site in Peru. It is also
+        referred to as &#39;The Lost City of the Incas&#39;.
+      </div>
+      <div className={classes.asTheLeadingHarborIconInIndiaT}>
+        <div className={classes.textBlock}>As the leading harbor icon in India, The Taj Mahal Palace, Mumbai commands a regal view of the Gateway of India and the Arabian
+        Sea. It epitomizes the enduring commitment to excellence, heritage, and service that the Taj brand is renowned for globally.</div>      </div>
+      <div className={classes.aRCHITECTURE}>ARCHITECTURE</div>
+      <div className={classes.rectangle5}></div>
+      <Frame3_Property1Default
+        className={classes.frame4}
+        text={{
+          category: <div className={classes.category}>CATEGORY</div>,
+        }}
+      />
+      <div className={classes.rectangle56}></div>
+      <div className={classes.rectangle57}></div>
+    </div>
+  );
+});
